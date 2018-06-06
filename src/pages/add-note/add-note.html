@@ -1,0 +1,22 @@
+<ion-header>
+ 
+  <ion-navbar>
+    <ion-title>Tambahkan Data Distro</ion-title>
+  </ion-navbar>
+ 
+</ion-header>
+ 
+<ion-content padding>
+ 
+  <ion-item>
+    <ion-label>Merek</ion-label>
+    <ion-input [(ngModel)]="note.title" placeholder="Masukan Nama Merek Baju"></ion-input>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-label>Harga</ion-label>
+    <ion-textarea [(ngModel)]="note.content" placeholder=" Masukan Harga"></ion-textarea>
+  </ion-item>
+ 
+  <button ion-button block clear (click)="addNote(note)">Tambahkan</button>
+</ion-content>
